@@ -1597,17 +1597,11 @@ settingsRegistry.addGroup('Layout', function () {
 			multiline: true,
 			public: true,
 		});
-		this.add('Layout_Legal_Notice', 'Legal Notice <br> Go to APP SETTINGS -> Layout to customize this page.', {
+		return this.add('Layout_Legal_Notice', 'Legal Notice <br> Go to APP SETTINGS -> Layout to customize this page.', {
 			type: 'code',
 			code: 'text/html',
 			multiline: true,
 			public: true,
-		});
-		return this.add('Layout_Sidenav_Footer', '<a href="/home"><img src="assets/logo.png" alt="Home" /></a>', {
-			type: 'code',
-			code: 'text/html',
-			public: true,
-			i18nDescription: 'Layout_Sidenav_Footer_description',
 		});
 	});
 	this.section('Custom_Scripts', function () {
